@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Cronómetro Online Gratis, cuenta con 3 botones, Un botón de Play para iniciar, un Botón de pausa para pausar y un botón de reinicio. Nunca Te rindas, Haz arder tu corazón!"
+    />
+    <meta
+      name="keywords"
+      content="cronómetro, chronometer, sports, deportes, running"
+    />
+    <meta name="author" content="Matias Carlos Arias" />
+
+    <link rel="shortcut icon" href=".//assets/cronometro-favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cronómetro Web</title>
+  </head>
+
+  <body>
+    <div class="cronometro_body">
+      <div class="cronometro_time">
+        <span id="spanMinutes">00</span> <span>:</span>
+        <span id="spanSeconds">00</span> <span>.</span>
+        <span id="spanMiliSeconds">00</span>
+      </div>
+
+      <div class="controls">
+        <button id="reset_button" class="reset" type="button">
+          <i class="fas fa-redo"></i>
+        </button>
+        <button id="pause_button" class="pause" type="button">
+          <i class="fas fa-pause"></i>
+        </button>
+        <button id="play_button" class="play" type="button">
+          <i class="fas fa-play"></i>
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <span>Creado por Matias Arias <i class="fas fa-heart"></i></span>
+
+      <div class="social_icons">
+        <a href="https://www.linkedin.com/in/matiasarias27/" target="_blank">
+          <img src="./assets/linkedin-black.png" alt="linkedin-icon"
+        /></a>
+
+        <a href="https://github.com/matiarias" target="_blank">
+          <img src="./assets/github.png" alt="github-icon"
+        /></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/35d40a1707.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
