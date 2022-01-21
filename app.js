@@ -18,7 +18,9 @@ let minutes = 00;
 
 let interval = null;
 
-// ----------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------
+
+play.addEventListener('click', startChronometer);
 
 function startChronometer(e) {
 
@@ -81,6 +83,8 @@ function startChronometer(e) {
 
 // -----------------------------------------------------------------------------------------------------------------
 
+pause.addEventListener('click', pauseChronometer);
+
 function pauseChronometer(e) {
 
     console.log(e);
@@ -89,7 +93,9 @@ function pauseChronometer(e) {
 
 };
 
-// ----------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------
+
+reset.addEventListener('click', resetChronometer)
 
 function resetChronometer(e) {
 
@@ -107,13 +113,8 @@ function resetChronometer(e) {
 
 };
 
-// ---------------------------------------------------------------------------------------------------------------------
 
-play.addEventListener('click', startChronometer);
-
-pause.addEventListener('click', pauseChronometer);
-
-reset.addEventListener('click', resetChronometer)
+// --------------------------------------------------------------------------------------------
 
 
 document.addEventListener('keypress', startKey);
@@ -122,7 +123,7 @@ function startKey(event) {
 
     console.log(event);
 
-    if (event.charCode === 32) {
+    if (event.charCode === 13) {
 
         startChronometer();
 
@@ -130,8 +131,41 @@ function startKey(event) {
 
 };
 
-// document.addEventListener('keypress', pauseKey);
+// -------------------------------------------------------------------------------------------------
 
+document.addEventListener('keypress', pauseKey);
+
+function pauseKey(event) {
+
+    console.log(event);
+
+    if (event.charCode === 32) {
+
+        pauseChronometer();
+
+    };
+
+};
+
+// -----------------------------------------------------------------------------------------------
+
+document.addEventListener('keypress', resetKey);
+
+function resetKey(event) {
+
+    console.log(event);
+
+    if (event.charCode === 114) {
+
+        resetChronometer();
+
+    };
+
+};
+
+// let worker = new window.Worker('worker.js')
+// worker.postMessage();
+// ------------------------------------------------------------------------------------------------
 
 
 
