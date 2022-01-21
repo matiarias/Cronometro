@@ -163,8 +163,7 @@ function resetKey(event) {
 
 };
 
-// let worker = new window.Worker('worker.js')
-// worker.postMessage();
+
 // ------------------------------------------------------------------------------------------------
 
 

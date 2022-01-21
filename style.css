@@ -35,7 +35,7 @@ body {
   width: 500px;
   border-radius: 20px;
   border: 3px solid rgba(255, 255, 255, 0.15);
-  background: linear-gradient(145deg, #cfdada, #afb7c7);
+  background: linear-gradient(145deg, #cfdada, #7e9dc7, #afb7c7, #63cc86);
   box-shadow: inset 17.42px 17.42px 17px #a4abba,
     inset -17.42px -17.42px 17px #ffffff;
   display: flex;
