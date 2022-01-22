@@ -17,12 +17,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
   height: 100vh;
   background: var(--background-1);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Roboto Mono", monospace;
@@ -42,6 +44,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 
 .cronometro_body .cronometro_time {
