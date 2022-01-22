@@ -213,6 +213,11 @@ footer .social_icons a:hover {
     font-size: 2.1rem;
   }
 
+  footer .social_icons a img {
+    height: 35px;
+    width: 35px;
+  }
+
   footer span {
     font-size: 1.1rem;
   }
