@@ -1,17 +1,15 @@
 :root {
   --background-1: linear-gradient(
     45deg,
-    #ffcc2f,
-    #ef5734,
-    #00acee,
-    #2baf2b,
-    #543729,
-    #cecece
+    #151515,
+    #13294b,
+    #007fae,
+    #4b9cd3,
+    #c2baba,
+    #767676
   );
-  --background-2: linear-gradient(-120deg, #0099ff, #fb0a2a, #17ad49, #333333);
+  background: linear-gradient(120deg, #0071bf, #000000);
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,300;1,400&display=swap");
 
 * {
   margin: 0;
@@ -21,13 +19,32 @@
 
 body {
   height: 100vh;
-  width: 100vw;
   background: var(--background-1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Roboto Mono", monospace;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  top: 60px;
+  height: 100px;
+  background: transparent;
+}
+
+h1 {
+  width: 100%;
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 5rem;
+  background-image: url(./assets/truenos.jpg);
+  background-position-y: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
   overflow: hidden;
 }
 
@@ -38,7 +55,7 @@ body {
   border-radius: 20px;
   border: 3px solid rgba(255, 255, 255, 0.15);
   background: linear-gradient(145deg, #cfdada, #7e9dc7, #afb7c7, #63cc86);
-  box-shadow: inset 17.42px 17.42px 17px #a4abba,
+  box-shadow: inset 17.42px 17.42px 17px #888d99,
     inset -17.42px -17.42px 17px #ffffff;
   display: flex;
   flex-direction: column;
@@ -111,7 +128,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 footer span {
@@ -121,7 +137,7 @@ footer span {
 }
 
 footer span i {
-  color: #4656e4;
+  color: #0e154e;
 }
 
 footer .social_icons {
@@ -147,6 +163,10 @@ footer .social_icons a:hover {
 /* ---------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 300px) and (max-width: 399px) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
   .cronometro_body {
     height: 200px;
     width: 320px;
@@ -179,6 +199,10 @@ footer .social_icons a:hover {
 }
 
 @media screen and (min-width: 400px) and (max-width: 576px) {
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
   .cronometro_body {
     height: 200px;
     width: 380px;
@@ -195,5 +219,11 @@ footer .social_icons a:hover {
 
   footer span {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  h1 {
+    font-size: 4.3rem;
   }
 }
