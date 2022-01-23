@@ -241,21 +241,25 @@ footer .social_icons a:hover {
 
 @media screen and (min-width: 400px) and (max-width: 576px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.7rem;
     text-align: center;
   }
   .cronometro_body {
-    height: 200px;
-    width: 380px;
+    height: 220px;
+    width: 390px;
   }
 
   .cronometro_body .cronometro_time span {
-    font-size: 4.4rem;
+    font-size: 3.9rem;
+  }
+
+  .cronometro_body .cronometro_time span:nth-child(5) {
+    font-size: 3.2rem;
   }
 
   .controls button i {
     text-align: center;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
   }
 
   footer .social_icons a img {
