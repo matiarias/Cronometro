@@ -263,7 +263,7 @@ footer .social_icons a:hover {
   }
 
   footer .social_icons a {
-    margin-left: 12px;
+    margin-left: 10px;
   }
 
   footer .social_icons a img {
@@ -272,7 +272,7 @@ footer .social_icons a:hover {
   }
 
   footer span {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
